@@ -1,0 +1,8 @@
+.cardStyle{
+    width: 18rem;
+}
+
+.card-body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
