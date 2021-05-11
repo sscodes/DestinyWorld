@@ -1,12 +1,31 @@
-.cardStyle{
-    width: 18rem;
+.cardStyle {
+  width: 18rem;
 }
 
-.card-body{
-    background-color: rgb(36, 36, 36);
-    color: white;
+.card-body {
+  background-color: rgb(36, 36, 36);
+  color: white;
 }
 
-.cardStyle.card{
-    border: solid 1px blue;
+.cardStyle.card {
+  border: solid 1px blue;
 }
+
+@media screen and (max-width: 384px) {
+  .cardStyle {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .cardStyle {
+    width: 14.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+    .cardStyle {
+      width: 12.5rem;
+    }
+  }
+  
