@@ -99,3 +99,10 @@ nav.navb.navbar.navbar-expand-lg.navbar-dark {
     transition: all 0.3s;
   }
 }
+
+@media screen and (max-width: 407px) {
+  .sideBody {
+    display: block;
+    visibility: hidden;
+  }
+}
