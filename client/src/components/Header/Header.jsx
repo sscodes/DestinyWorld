@@ -48,7 +48,7 @@ const Header = (props) => {
     //   };
 
     return (
-        <Navbar fixed="top" className="navb" variant="dark">
+        <Navbar fixed="top" className="navb bg-black" variant="dark">
             <Navbar.Brand href="#home">
                 <img src={logo} alt="" height="30" />
             </Navbar.Brand>
@@ -72,10 +72,10 @@ const Header = (props) => {
                             return (
                                 <li key={index} className="nav-text mb-sm-5">
                                     <Link to={item.path}>
-                                        {item.icon}
+                                        <span>{item.icon}</span>
                                         <span>{item.title}</span>
                                     </Link>
-                                    <div className="sideBod5 r">{item.body}</div>
+                                    <div className="sideBody mx-5">{item.body}</div>
                                 </li>
                             );
                         })}
