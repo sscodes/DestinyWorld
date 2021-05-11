@@ -48,19 +48,19 @@ const Header = (props) => {
     //   };
 
     return (
-        <Navbar fixed="top" expand="lg" className="navb" variant="dark">
+        <Navbar fixed="top" className="navb" variant="dark">
             <Navbar.Brand href="#home">
                 <img src={logo} alt="" height="30" />
             </Navbar.Brand>
-            <Nav>
+            <Nav className="extraNav">
                 <Nav href="#deets">
                     <Button variant="light">Login</Button>
                 </Nav>
-                <div>
+                <Nav>
                     <Link to="/">
                         <FaBars onClick={showSidebar} style={{ fontSize: "2rem", color: "white", marginLeft: "20px", marginTop: "5px" }} />
                     </Link>
-                </div>
+                </Nav>
                 <Nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className='nav-menu-items' onClick={showSidebar}>
                         <li className='navbar-toggle'>
@@ -70,11 +70,12 @@ const Header = (props) => {
                         </li>
                         {SidebarData.map((item, index) => {
                             return (
-                                <li key={index} className={item.cName}>
+                                <li key={index} className="nav-text mb-sm-5">
                                     <Link to={item.path}>
                                         {item.icon}
                                         <span>{item.title}</span>
                                     </Link>
+                                    <div className="sideBod5 r">{item.body}</div>
                                 </li>
                             );
                         })}
