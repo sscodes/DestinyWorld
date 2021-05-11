@@ -6,7 +6,7 @@ const Cards = (props) => {
         <>
             <Card className="cardStyle">
                 <Card.Body>
-                    <Card.Title style={{color: "skyblue"}}>{props.title}</Card.Title>
+                    <Card.Title style={{color: "skyblue", fontSize: "1.75rem"}}>{props.title}</Card.Title>
                     <hr style={{color: "skyblue"}} />
                     <Card.Text>
                         {props.body}
