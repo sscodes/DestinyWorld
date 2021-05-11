@@ -3,6 +3,10 @@
 }
 
 .card-body{
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(36, 36, 36);
     color: white;
+}
+
+.cardStyle.card{
+    border: solid 1px blue;
 }
